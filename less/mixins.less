@@ -1,1 +1,16 @@
 // Mixins in here
+
+.flexProp {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+}
+
+// Parametric Mixins
+
+.flexPosition(@justify; @align) {
+    justify-content: @justify;
+    align-items: @align;
+}
