@@ -1,9 +1,55 @@
 header{
+  .flexProp;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  
+  height: 9rem;
+  border-bottom: 2px dashed @navigation-border;
+
+  h2 {
+    font-size: 4rem;
+    padding: 0 0 0 19rem;  
+  }
+
+  nav ul {
+    .flexProp;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 14rem;
+    width: 60rem;
+
+      li {
+        font-size: 1.5rem;
+        font-weight: bold;
+        
+      }
+    }
+  }
+
+
+.intro-section {
+  .flexProp;
+  border-bottom: 2px dashed @navigation-border;
+  flex-direction: column;
+  justify-content: center;
+  width: 80rem;
+  margin-left: 18rem;
+
+  img {
+    align-self: center;
+  }
+
+  h2 {
+    align-self: flex-start;
+    font-weight: bold;
+    padding-top: 2.25rem;
+
+  }
+
+  p {
+    width: 85%;
+  }
 }
-
-
 
 .home {
 
