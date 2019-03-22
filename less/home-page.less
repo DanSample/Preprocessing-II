@@ -1,7 +1,7 @@
 // Header added and children nested
 header{
   .flexProp;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 9rem;
@@ -30,25 +30,28 @@ header{
 // Intro section children nested
 .intro-section {
   .flexProp;
-  border-bottom: 2px dashed @navigation-border;
+  .botBorderDash(2px; dashed; @navigation-border);
   flex-direction: column;
   justify-content: center;
-  width: 80rem;
-  margin-left: 27rem;
+  width: auto;
+
 
   img {
     align-self: center;
+    width: 100%;
   }
 
   h2 {
     align-self: flex-start;
     font-weight: bold;
-    padding-top: 2.25rem;
+    padding-top: 2.25rem
 
   }
 
   p {
-    width: 85%;
+    align-self: flex-start;
+    font-size: 1.75rem;
+    padding: 0 0 2rem 0.5rem;
   }
 }
 
@@ -77,9 +80,10 @@ header{
     }
   }
 
+  // replaced border with parametric mixin
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    .botBorderDash(2px; dashed; @navigation-border);
 
     .text-content {
       padding-left: 1%;
