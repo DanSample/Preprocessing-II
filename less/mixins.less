@@ -10,11 +10,21 @@
 
 // Parametric Mixins
 
-.flexPosition(@justify, @align) {
+.flexPosition(@justify; @align) {
     justify-content: @justify;
     align-items: @align;
 }
 
-.borderDash(@border-width, @border-color, @border-style) {
+.botBorderDash(@border-width; @border-color; @border-style) {
     border-bottom: @border-width @border-color @border-style;
+}
+
+.buttonStyle(@height; @width) {
+    height: @height;
+    width: @width;
+    background-color: darken(hsl(@button-bg), 10%);
+    border-radius: 1rem;
+    color: @main-bg;
+    font-size: 2rem;
+    font-weight: bold;
 }

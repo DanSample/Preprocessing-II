@@ -179,6 +179,15 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.btn button {
+  height: 5rem;
+  width: 21rem;
+  background-color: hsl(188.19875776, 77.77777778%, 30.58823529%);
+  border-radius: 1rem;
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: bold;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
