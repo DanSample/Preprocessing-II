@@ -41,7 +41,7 @@ h4 {
   padding-bottom: 10px;
 
   @media @mobile {
-    align-self: center;
+    align-self: flex-start;
     }
 }
 
@@ -89,6 +89,19 @@ img {
 
 
 // Button styling
-.btn button {
-  .buttonStyle(5rem; 21rem); 
+.btn {
+  @media @mobile {
+    align-self: center;
+    width: 100%;
   }
+
+  button {
+    .buttonStyle(5rem; 21rem; @button-bg); 
+
+  @media @mobile {
+    align-self: center;
+    width: 100%;
+    background-color: @button-bg;
+    }
+  }
+}

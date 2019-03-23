@@ -143,6 +143,10 @@ header{
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+      }
+
     img {
       border-radius: 10px;
     }
@@ -151,7 +155,7 @@ header{
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
+    .flexProp;
     justify-content: space-between;
 
     @media @mobile {
@@ -166,8 +170,8 @@ header{
       @media @mobile {
         .flexProp;
         flex-direction: column;
-        width: 100%;
-        margin:0 auto;
+        align-self: center;
+        width: 65%;
       }
     }
   }

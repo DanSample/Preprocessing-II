@@ -174,7 +174,7 @@ h4 {
 }
 @media (max-width: 500px) {
   h4 {
-    align-self: center;
+    align-self: flex-start;
   }
 }
 p {
@@ -214,14 +214,27 @@ img {
     margin: 2rem auto;
   }
 }
+@media (max-width: 500px) {
+  .btn {
+    align-self: center;
+    width: 100%;
+  }
+}
 .btn button {
   height: 5rem;
   width: 21rem;
-  background-color: hsl(188.19875776, 77.77777778%, 30.58823529%);
+  background-color: #17A2B8;
   border-radius: 1rem;
   color: #FFFFFF;
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 500px) {
+  .btn button {
+    align-self: center;
+    width: 100%;
+    background-color: #17A2B8;
+  }
 }
 .footer {
   width: 100%;
@@ -377,12 +390,21 @@ header nav ul li {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
 }
@@ -404,7 +426,7 @@ header nav ul li {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
+    align-self: center;
+    width: 65%;
   }
 }

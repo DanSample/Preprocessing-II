@@ -19,10 +19,10 @@
     border-bottom: @border-width @border-color @border-style;
 }
 
-.buttonStyle(@height; @width) {
+.buttonStyle(@height; @width; @backgroundColor: darken(hsl(@button-bg), 10%)) {
     height: @height;
     width: @width;
-    background-color: darken(hsl(@button-bg), 10%);
+    background-color: @backgroundColor;
     border-radius: 1rem;
     color: @main-bg;
     font-size: 2rem;
