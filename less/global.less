@@ -10,6 +10,7 @@ body {
   padding-left: 15rem;
   padding-right: 15rem;
 
+  // MQ to take away padding
   @media @mobile {
     padding: 0;
   }
@@ -34,20 +35,35 @@ h2 {
   padding-bottom: 10px;
 }
 
+// MQ to align <h4> center for mobile
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    align-self: center;
+    }
 }
 
 p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    width: 100%;
+    align-self: center;
+    }
 }
 
 img {
   max-width: 100%;
   height: auto;
+
+  // MQ to fit the <img>'s to the width of the other content
+  @media @mobile {
+    width: 500px;
+  }
 }
 
 // set max-width 800px to bring it inline with other content
@@ -61,6 +77,13 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+  // MQ on content container to bring all content in off the edges
+  @media @mobile {
+    max-width: 500px;
+    width: 90%;
+    margin: 2rem auto;
+  }
 }
 
 
