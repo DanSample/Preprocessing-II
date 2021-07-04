@@ -1,1 +1,30 @@
 // Mixins in here
+
+.flexProp {
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+}
+
+// Parametric Mixins
+
+.flexPosition(@justify; @align) {
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.botBorderDash(@border-width; @border-color; @border-style) {
+    border-bottom: @border-width @border-color @border-style;
+}
+
+.buttonStyle(@height; @width; @backgroundColor: darken(hsl(@button-bg), 10%)) {
+    height: @height;
+    width: @width;
+    background-color: @backgroundColor;
+    border-radius: 1rem;
+    color: @main-bg;
+    font-size: 2rem;
+    font-weight: bold;
+}
